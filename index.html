@@ -7,7 +7,6 @@
     <link rel="icon" type="image/png" href="data:image/png;base64,">
     <title>Daniel's CV</title>
     <style>
-        /* Base styles (Light Mode) */
         body {
             margin: 1em auto;
             max-width: 40em;
@@ -75,51 +74,15 @@
         </header>
 
         <p>
-	An Ethereum educator, researcher, and open-source contributor focused on bridging the gap between core protocol development and the broader developer community. With experience as an Ethereum Protocol Fellow, I specialize in creating high-quality technical content, presenting at major industry events like Devconnect, and contributing to foundational projects like Lighthouse. I am passionate about making complex blockchain concepts accessible and empowering developers to build on robust and scalable infrastructure.
+            I am a programmer, researcher, and writer specializing in the Ethereum ecosystem. I contribute to open-source clients like Lighthouse and Reth, and was selected as an Ethereum Protocol Fellow in 2023. My work spans technical research, developer tooling contributions, and community education. Publishing widely read articles, delivering talks at international conferences, and supporting accessibility through translation. I hold a bachelor’s degree in Mechatronics Engineering from the National University of Colombia (2025).
         </p>
-
-        <h2>Professional Experience</h2>
-        <ul>
-            <li>
-                <strong>Protocol Fellow, Ethereum Foundation, Remote, August 2023 - November 2023</strong>
-                <p>As a protocol fellow:</p>
-                <ul>
-                    <li>Researched how to build a lightweight validator by replacing the execution layer client with a portal client on staking setups.</li>
-                    <li>Published multiple technical articles documenting my research.</li>
-                    <li>Delivered talks at Devconnect 2023, sharing insights on staking and lightweight validators.</li>
-                    <li>Collaborated with leading Ethereum developers, especially Ethereum Foundation's Trin team, to refine my research.</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>Open Source Contributions</h2>
-        <ul>
-            <li>
-                <p><strong><a href="https://github.com/sigp/lighthouse/">Lighthouse</a></strong>: Ethereum consensus client in Rust.</p>
-                <ul>
-                    <li>I have multiple pull requests merged into Lighthouse and running in production. Here's the <a href="https://github.com/sigp/lighthouse/pulls?q=is%3Apr+author%3Adanielrachi1">list of all Pull Requests</a></li>
-                </ul>
-            </li>
-            <li>
-                <p><strong><a href="https://github.com/foundry-rs/foundry">Foundry</a></strong>: Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.</p>
-                <ul>
-                    <li><a href="https://github.com/foundry-rs/foundry/pull/2528">PR#2528</a>: Added the contract ignore list to the gas report feature.</li>
-                </ul>
-            </li>
-            <li>
-                <p><strong><a href="https://github.com/paradigmxyz/reth">Reth</a></strong>: Modular, contributor-friendly and blazing-fast implementation of the Ethereum protocol, in Rust.</p>
-                <ul>
-                    <li><a href="https://github.com/paradigmxyz/reth/pull/17497">PR#17497</a>: Added IPC socket permission configuration.</li>
-                </ul>
-            </li>
-        </ul>
 
         <h2>Publications and Talks</h2>
         <ul>
             <li>
                 <strong>Articles:</strong>
                 <ul>
-                    <li><a href="https://hackmd.io/@danielrachi/engine_api">Engine API: A Visual Guide</a>: A deep dive into how Ethereum execution layer clients communicate with consensus layer clients. (More than 19,000 views!)</li>
+                    <li><a href="https://hackmd.io/@danielrachi/engine_api">Engine API: A Visual Guide</a>: A deep dive into how Ethereum execution layer clients communicate with consensus layer clients. (19,000+ views)</li>
                     <li><a href="https://hackmd.io/@danielrachi/node_startup">Lighthouse Beacon Node Startup</a>: Exploring how Lighthouse initiates a Beacon Node, focusing on the execution engine.</li>
                     <li><a href="https://hackmd.io/@danielrachi/flashbots">Notes on Flashbots PBS Architecture</a>: Explaining how the current PBS architecture works.</li>
                     <li><a href="https://hackmd.io/@danielrachi/epf_final">EFP Final Dev Update</a>: Final update and closing thoughts about my Ethereum Protocol Fellowship project.</li>
@@ -135,23 +98,62 @@
             </li>
         </ul>
 
-        <h2>Community Involvement</h2>
+        <h2>Open Source Contributions</h2>
         <ul>
             <li>
-                <strong>Lead Translator, Optimism, January 2022 - January 2024</strong>
-                <p>As a lead translator:</p>
+                <p><strong><a href="https://github.com/sigp/lighthouse/">Lighthouse</a></strong>: Ethereum consensus client in Rust.</p>
                 <ul>
-                    <li>Translated multiple documents, technical articles, and guides into Spanish for the <a href="https://help.optimism.io">Optimism help center</a>.</li>
-                    <li>Reviewed translations from other contributors to ensure quality and consistency.</li>
+                    <li>Multiple merged pull requests improving consensus client functionality. <a href="https://github.com/sigp/lighthouse/pulls?q=is%3Apr+author%3Adanielrachi1">Full PR list</a>.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong><a href="https://github.com/foundry-rs/foundry">Foundry</a></strong>: Toolkit for Ethereum application development in Rust.</p>
+                <ul>
+                    <li><a href="https://github.com/foundry-rs/foundry/pull/2528">PR#2528</a>: Added contract ignore list to the gas report feature.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong><a href="https://github.com/paradigmxyz/reth">Reth</a></strong>: Fast, modular implementation of the Ethereum protocol in Rust.</p>
+                <ul>
+                    <li><a href="https://github.com/paradigmxyz/reth/pull/17497">PR#17497</a>: Added IPC socket permission configuration.</li>
                 </ul>
             </li>
         </ul>
 
-        <h2>Education</h2>
+        <h2>Professional Experience</h2>
         <ul>
             <li>
-                Bachelor's degree in mechatronics engineering, National University of Colombia, Bogotá, Colombia, 2018 - 2025. Graduation date: 2025-05-27
+                <strong>Protocol Fellow, Ethereum Foundation, Remote, August 2023 - November 2023</strong>
+                <ul>
+                    <li>Researched lightweight validator designs using the Portal Network, replacing the execution layer client in staking setups.</li>
+                    <li>Published multiple technical articles documenting research and learnings for developers.</li>
+                    <li>Delivered talks at Devconnect 2023, engaging international developer audiences.</li>
+                    <li>Collaborated with Ethereum Foundation’s Trin team and other protocol developers to refine validator research.</li>
+                </ul>
             </li>
+        </ul>
+
+        <h2>Community Involvement</h2>
+        <ul>
+            <li>
+                <strong>Lead Translator, Optimism, January 2022 - January 2024</strong>
+                <ul>
+                    <li>Translated technical documentation and guides into Spanish for the <a href="https://help.optimism.io">Optimism Help Center</a>, expanding accessibility for Spanish-speaking developers.</li>
+                    <li>Reviewed translations from contributors to ensure accuracy and consistency.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Rust, Solidity, Python, JavaScript</li>
+            <li><strong>Ethereum:</strong> Consensus (Lighthouse), Execution (Reth, Foundry), Portal Network</li>
+            <li><strong>Developer Relations:</strong> Technical writing (HackMD, blog), Public speaking (Devconnect, EthStaker), Community engagement (Optimism translations)</li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor’s degree in Mechatronics Engineering, National University of Colombia, Bogotá, 2018 – 2025. Graduation: May 27, 2025</li>
         </ul>
     </article>
 </body>
