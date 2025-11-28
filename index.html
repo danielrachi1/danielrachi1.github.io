@@ -1,1 +1,155 @@
-🏗️
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" type="image/png" href="data:image/png;base64,">
+    <title>Daniel's CV</title>
+    <style>
+        /* Base styles (Light Mode) */
+        body {
+            margin: 1em auto;
+            max-width: 40em;
+            padding: 0 .62em 3.24em;
+            font: 1.2em/1.62 sans-serif;
+            color: #000;
+            background: #fff;
+        }
+        h1, h2, h3 {
+            line-height: 1.2;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000;
+                color: #f0f0f0;
+            }
+            a {
+                color: #66ccff;
+            }
+        }
+        aside {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+        }
+        @media print {
+            body {
+                max-width: none;
+            }
+        }
+        @media (max-width: 690px) {
+            aside {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Daniel Ramirez</h1>
+            <aside>
+                <img src="face.jpg" alt="Daniel Ramirez">
+                <ul>
+                    <li><strong>Discord:</strong> <a href="https://discord.com/users/321481409552449536">danielrachi</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:hi@danielrachi.com">hi@danielrachi.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/danielrachi1">danielrachi1</a></li>
+                    <li><strong>Hackmd:</strong> <a href="https://hackmd.io/@danielrachi">danielrachi</a></li>
+                    <li><strong>Personal Website:</strong> <a href="https://danielrachi.com">danielrachi.com</a></li>
+                    <li><strong>Telegram:</strong> <a href="https://t.me/danielrachi">danielrachi</a></li>
+                </ul>
+            </aside>
+        </header>
+
+        <p>
+            I'm a programmer, researcher, and writer with a focus on the Ethereum ecosystem. I've contributed to the Lighthouse consensus client since late 2022, and was selected as an Ethereum protocol fellow in 2023. During the fellowship, I researched building a lightclient validator using the Portal Network, publishing articles and delivering talks at Devconnect 2023. I completed my bachelor's degree in mechatronics engineering at the National University of Colombia in 2025.
+        </p>
+
+        <h2>Professional Experience</h2>
+        <ul>
+            <li>
+                <strong>Protocol Fellow, Ethereum Foundation, Remote, August 2023 - November 2023</strong>
+                <p>As a protocol fellow:</p>
+                <ul>
+                    <li>Researched how to build a lightweight validator by replacing the execution layer client with a portal client on staking setups.</li>
+                    <li>Published multiple technical articles documenting my research.</li>
+                    <li>Delivered talks at Devconnect 2023, sharing insights on staking and lightweight validators.</li>
+                    <li>Collaborated with leading Ethereum developers, especially Ethereum Foundation's Trin team, to refine my research.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Open Source Contributions</h2>
+        <ul>
+            <li>
+                <p><strong><a href="https://github.com/sigp/lighthouse/">Lighthouse</a></strong>: Ethereum consensus client in Rust.</p>
+                <ul>
+                    <li><a href="https://github.com/sigp/lighthouse/pull/3753">PR#3753</a>: Added the <code>finalized</code> flag to all responses of the beacon node HTTP API.</li>
+                    <li><a href="https://github.com/sigp/lighthouse/pull/4002">PR#4002</a>: Cleaned redundant code on the <code>network::Router</code> and <code>network::Processor</code> crates.</li>
+                    <li><a href="https://github.com/sigp/lighthouse/pull/4052">PR#4052</a>: Added the <code>always_prefer_builder_payload</code> field to the configuration. (And all its corresponding logic.)</li>
+                    <li><a href="https://github.com/sigp/lighthouse/pulls?q=is%3Apr+author%3Adanielramirezch">List of all Pull Requests</a></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong><a href="https://github.com/foundry-rs/foundry">Foundry</a></strong>: Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.</p>
+                <ul>
+                    <li><a href="https://github.com/foundry-rs/foundry/pull/2528">PR#2528</a>: Added the contract ignore list to the gas report feature.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Publications and Talks</h2>
+        <ul>
+            <li>
+                <strong>Articles:</strong>
+                <ul>
+                    <li><a href="https://hackmd.io/@danielrachi/engine_api">Engine API: A Visual Guide</a>: A deep dive into how Ethereum execution layer clients communicate with consensus layer clients.</li>
+                    <li><a href="https://hackmd.io/@danielrachi/node_startup">Lighthouse Beacon Node Startup</a>: Exploring how Lighthouse initiates a Beacon Node, focusing on the execution engine.</li>
+                    <li><a href="https://hackmd.io/@danielrachi/flashbots">Notes on Flashbots PBS Architecture</a>: Explaining how the current PBS architecture works.</li>
+                    <li><a href="https://hackmd.io/@danielrachi/epf_final">EFP Final Dev Update</a>: Final update and closing thoughts about my Ethereum Protocol Fellowship project.</li>
+                    <li>More articles on my <a href="https://hackmd.io/@danielrachi">Hackmd account</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>Talks:</strong>
+                <ul>
+                    <li><a href="https://youtu.be/CUKqWzty4Qo?si=4eqxrS_K-s6ieKJs">Staking Without Execution Clients</a>: Ethstaker's Staking Gathering 2023, Istanbul, Turkey.</li>
+                    <li><a href="https://streameth.org/devconnect/watch?session=65b8f8cda5b2d09b88ec0fc5">Portal Network Validator</a>: EPF Day 2023, Istanbul, Turkey.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Community Involvement</h2>
+        <ul>
+            <li>
+                <strong>Lead Translator, Optimism, January 2022 - January 2024</strong>
+                <p>As a lead translator:</p>
+                <ul>
+                    <li>Translated multiple documents, technical articles, and guides into Spanish for the <a href="https://help.optimism.io">Optimism help center</a>.</li>
+                    <li>Reviewed translations from other contributors to ensure quality and consistency.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul>
+            <li>
+                Bachelor's degree in mechatronics engineering, National University of Colombia, Bogotá, Colombia, 2018 - 2025. Graduation date: 2025-05-27
+            </li>
+        </ul>
+    </article>
+</body>
+</html>
